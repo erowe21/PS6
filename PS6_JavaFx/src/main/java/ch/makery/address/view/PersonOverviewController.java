@@ -157,9 +157,10 @@ public class PersonOverviewController {
             boolean okClicked = mainApp.showPersonEditDialog(selectedPerson);
             if (okClicked) {
             	
-            	//PS6 - Calling the updatePerson method
-            	//TODO: Call Update Person in PersonDAL 
-                showPersonDetails(selectedPerson);
+            	updatePerson per = new updatePerson(); 
+                
+            	
+            	showPersonDetails(selectedPerson);
             }
 
         } else {
