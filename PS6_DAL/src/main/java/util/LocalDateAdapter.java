@@ -22,3 +22,4 @@ public class LocalDateAdapter extends XmlAdapter<String, LocalDate> {
         return v.toString();
     }
 }
+

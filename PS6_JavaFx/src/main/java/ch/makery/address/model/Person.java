@@ -30,5 +30,23 @@ public class Person extends PersonDomainModel {
         this.setCity(city);
         this.setBirthday((LocalDate.of(1999, 2, 21)));
     }
+	public StringProperty getFirstNameProperty() {
+		return new SimpleStringProperty(getFirstName());
+	}
 
+	public StringProperty getLastNameProperty() {
+		return new SimpleStringProperty(getLastName());
+	}
+
+	public StringProperty getStreetProperty() {
+		return new SimpleStringProperty(getStreet());
+	}
+
+	public StringProperty getCityProperty() {
+		return new SimpleStringProperty(getCity());
+	}
+
+	public IntegerProperty getPostalCodeProperty() {
+		return new SimpleIntegerProperty(getPostalCode());
+	}
 }
